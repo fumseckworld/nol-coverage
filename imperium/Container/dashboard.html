@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/willy/Workspace/imperium/imperium/Database</title>
+  <title>Dashboard for /home/willy/Workspace/imperium/imperium/Container</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="../../index.html">/home/willy/Workspace/imperium</a></li>
          <li class="breadcrumb-item"><a href="../index.html">imperium</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Database</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Container</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -156,7 +156,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,1,0], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,1], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -174,7 +174,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,1,9], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,7], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -224,7 +224,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[96.875,15,"<a href=\"DB.php.html#44\">Imperium\\Database\\DB<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,8,"<a href=\"Ioc.php.html#45\">Imperium\\Container\\Ioc<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -248,7 +248,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"DB.php.html#62\">Imperium\\Database\\DB::__construct<\/a>"],[100,1,"<a href=\"DB.php.html#84\">Imperium\\Database\\DB::dev<\/a>"],[100,1,"<a href=\"DB.php.html#102\">Imperium\\Database\\DB::prod<\/a>"],[100,1,"<a href=\"DB.php.html#120\">Imperium\\Database\\DB::test<\/a>"],[100,1,"<a href=\"DB.php.html#145\">Imperium\\Database\\DB::exec<\/a>"],[100,3,"<a href=\"DB.php.html#171\">Imperium\\Database\\DB::get<\/a>"],[100,1,"<a href=\"DB.php.html#197\">Imperium\\Database\\DB::mysql<\/a>"],[100,1,"<a href=\"DB.php.html#211\">Imperium\\Database\\DB::postgresql<\/a>"],[100,1,"<a href=\"DB.php.html#226\">Imperium\\Database\\DB::sqlite<\/a>"],[90.47619047619048,4,"<a href=\"DB.php.html#237\">Imperium\\Database\\DB::pdo<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Ioc.php.html#63\">Imperium\\Container\\Ioc::get<\/a>"],[100,1,"<a href=\"Ioc.php.html#78\">Imperium\\Container\\Ioc::set<\/a>"],[100,1,"<a href=\"Ioc.php.html#96\">Imperium\\Container\\Ioc::call<\/a>"],[100,1,"<a href=\"Ioc.php.html#114\">Imperium\\Container\\Ioc::make<\/a>"],[100,1,"<a href=\"Ioc.php.html#131\">Imperium\\Container\\Ioc::has<\/a>"],[100,1,"<a href=\"Ioc.php.html#143\">Imperium\\Container\\Ioc::ioc<\/a>"],[100,2,"<a href=\"Ioc.php.html#153\">Imperium\\Container\\Ioc::container<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);
