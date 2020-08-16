@@ -2,12 +2,12 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/willy/.work/nol/helpers</title>
+  <title>Dashboard for /home/willy/.work/nol/nol/Html</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
-  <link href="../_css/style.css" rel="stylesheet" type="text/css">
-  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
  </head>
  <body>
   <header>
@@ -16,8 +16,9 @@
      <div class="col-md-12">
       <nav aria-label="breadcrumb">
        <ol class="breadcrumb">
-         <li class="breadcrumb-item"><a href="../index.html">/home/willy/.work/nol</a></li>
-         <li class="breadcrumb-item"><a href="index.html">helpers</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">/home/willy/.work/nol</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">nol</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Html</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -58,6 +59,7 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#24">Nol\Html\Form\Generator\FormGenerator</a></td><td class="text-right">54%</td></tr>
 
        </tbody>
       </table>
@@ -74,6 +76,7 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#24">Nol\Html\Form\Generator\FormGenerator</a></td><td class="text-right">137</td></tr>
 
        </tbody>
       </table>
@@ -111,6 +114,10 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#179"><abbr title="Nol\Html\Form\Generator\FormGenerator::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#167"><abbr title="Nol\Html\Form\Generator\FormGenerator::row">row</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#237"><abbr title="Nol\Html\Form\Generator\FormGenerator::select">select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#77"><abbr title="Nol\Html\Form\Generator\FormGenerator::add">add</abbr></a></td><td class="text-right">53%</td></tr>
 
        </tbody>
       </table>
@@ -127,6 +134,8 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#77"><abbr title="Nol\Html\Form\Generator\FormGenerator::add">add</abbr></a></td><td class="text-right">75</td></tr>
+       <tr><td><a href="Form/Generator/FormGenerator.php.html#237"><abbr title="Nol\Html\Form\Generator\FormGenerator::select">select</abbr></a></td><td class="text-right">6</td></tr>
 
        </tbody>
       </table>
@@ -140,9 +149,9 @@
     </p>
    </footer>
   </div>
-  <script src="../_js/jquery.min.js" type="text/javascript"></script>
-  <script src="../_js/d3.min.js" type="text/javascript"></script>
-  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 $(document).ready(function() {
   nv.addGraph(function() {
@@ -155,7 +164,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,1,0,0,0,1,1], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -173,7 +182,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .datum(getCoverageDistributionData([3,0,0,0,0,0,1,0,0,0,1,11], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -223,7 +232,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([], 'Class Complexity'))
+      .datum(getComplexityData([[91.66666666666666,15,"<a href=\"Form\/Form.php.html#23\">Nol\\Html\\Form\\Form<\/a>"],[54.166666666666664,33,"<a href=\"Form\/Generator\/FormGenerator.php.html#24\">Nol\\Html\\Form\\Generator\\FormGenerator<\/a>"],[100,8,"<a href=\"Pagination\/Pagination.php.html#32\">Nol\\Html\\Pagination\\Pagination<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -247,7 +256,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Form\/Form.php.html#53\">Nol\\Html\\Form\\Form::success<\/a>"],[90,9,"<a href=\"Form\/Form.php.html#66\">Nol\\Html\\Form\\Form::display<\/a>"],[100,1,"<a href=\"Form\/Form.php.html#123\">Nol\\Html\\Form\\Form::builder<\/a>"],[100,4,"<a href=\"Form\/Form.php.html#140\">Nol\\Html\\Form\\Form::apply<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#31\">Nol\\Html\\Form\\Generator\\FormGenerator::__construct<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#50\">Nol\\Html\\Form\\Generator\\FormGenerator::open<\/a>"],[53.84615384615385,23,"<a href=\"Form\/Generator\/FormGenerator.php.html#77\">Nol\\Html\\Form\\Generator\\FormGenerator::add<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#153\">Nol\\Html\\Form\\Generator\\FormGenerator::has<\/a>"],[0,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#167\">Nol\\Html\\Form\\Generator\\FormGenerator::row<\/a>"],[0,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#179\">Nol\\Html\\Form\\Generator\\FormGenerator::end<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#196\">Nol\\Html\\Form\\Generator\\FormGenerator::close<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#217\">Nol\\Html\\Form\\Generator\\FormGenerator::append<\/a>"],[0,2,"<a href=\"Form\/Generator\/FormGenerator.php.html#237\">Nol\\Html\\Form\\Generator\\FormGenerator::select<\/a>"],[100,1,"<a href=\"Form\/Generator\/FormGenerator.php.html#264\">Nol\\Html\\Form\\Generator\\FormGenerator::generateInputOptions<\/a>"],[100,2,"<a href=\"Pagination\/Pagination.php.html#65\">Nol\\Html\\Pagination\\Pagination::__construct<\/a>"],[100,6,"<a href=\"Pagination\/Pagination.php.html#86\">Nol\\Html\\Pagination\\Pagination::render<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

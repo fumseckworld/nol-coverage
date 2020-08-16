@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/willy/.work/nol/nol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/home/willy/.work/nol</a></li>
+         <li class="breadcrumb-item"><a href="index.html">nol</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Routing/Router.php.html#25">Nol\Http\Routing\Router</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#42">Nol\Database\Found\Search</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#40">Nol\Database\Model\Model</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#33">Nol\Database\Query\Sql</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#40">Nol\Database\Table\Table</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Command.php.html#15">Nol\Console\Command</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#18">Nol\Messages\Flash\Flash</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Request/Upload.php.html#40">Nol\Http\Request\Upload</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#46">Nol\Database\Connection\Connect</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="Session/Session.php.html#34">Nol\Session\Session</a></td><td class="text-right">10%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#21">Nol\Http\Controller\Controller</a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#42">Nol\Testing\Unit</a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#12">Nol\Security\Validator\Validator</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Configuration/Config.php.html#41">Nol\Configuration\Config</a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#24">Nol\Html\Form\Generator\FormGenerator</a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="Http/Parameters/UploadedFile.php.html#45">Nol\Http\Parameters\UploadedFile</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#48">Nol\Http\Response\Response</a></td><td class="text-right">68%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Testing/Unit.php.html#42">Nol\Testing\Unit</a></td><td class="text-right">3673</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#46">Nol\Database\Connection\Connect</a></td><td class="text-right">519</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#12">Nol\Security\Validator\Validator</a></td><td class="text-right">482</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#40">Nol\Database\Table\Table</a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#21">Nol\Http\Controller\Controller</a></td><td class="text-right">216</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#40">Nol\Database\Model\Model</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#24">Nol\Html\Form\Generator\FormGenerator</a></td><td class="text-right">137</td></tr>
+       <tr><td><a href="Session/Session.php.html#34">Nol\Session\Session</a></td><td class="text-right">134</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#42">Nol\Database\Found\Search</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#48">Nol\Http\Response\Response</a></td><td class="text-right">57</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#25">Nol\Http\Routing\Router</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Http/Request/Upload.php.html#40">Nol\Http\Request\Upload</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#18">Nol\Messages\Flash\Flash</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Parameters/UploadedFile.php.html#45">Nol\Http\Parameters\UploadedFile</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Configuration/Config.php.html#41">Nol\Configuration\Config</a></td><td class="text-right">9</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Collection/Collect.php.html#66"><abbr title="Nol\Collection\Collect::combine">combine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#29"><abbr title="Nol\Messages\Flash\Flash::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Request/Upload.php.html#72"><abbr title="Nol\Http\Request\Upload::apply">apply</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#155"><abbr title="Nol\Http\Response\Response::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#175"><abbr title="Nol\Http\Response\Response::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#39"><abbr title="Nol\Http\Routing\Router::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#66"><abbr title="Nol\Http\Routing\Router::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#92"><abbr title="Nol\Http\Routing\Router::match">match</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#44"><abbr title="Nol\Messages\Flash\Flash::has">has</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Parameters/UploadedFile.php.html#82"><abbr title="Nol\Http\Parameters\UploadedFile::move">move</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#59"><abbr title="Nol\Messages\Flash\Flash::message">message</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#48"><abbr title="Nol\Security\Validator\Validator::alert">alert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#57"><abbr title="Nol\Session\Session::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#72"><abbr title="Nol\Session\Session::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#87"><abbr title="Nol\Session\Session::has">has</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#101"><abbr title="Nol\Session\Session::del">del</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Request/Request.php.html#85"><abbr title="Nol\Http\Request\Request::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Parameters/Bag.php.html#205"><abbr title="Nol\Http\Parameters\Bag::double">double</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#133"><abbr title="Nol\Session\Session::clear">clear</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#136"><abbr title="Nol\Http\Controller\Controller::session">session</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#458"><abbr title="Nol\Collection\Collect::nextValue">nextValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#56"><abbr title="Nol\Http\Controller\Controller::table">table</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#73"><abbr title="Nol\Http\Controller\Controller::form">form</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#91"><abbr title="Nol\Http\Controller\Controller::apply">apply</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#106"><abbr title="Nol\Http\Controller\Controller::response">response</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#121"><abbr title="Nol\Http\Controller\Controller::env">env</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#150"><abbr title="Nol\Http\Controller\Controller::collect">collect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Parameters/Bag.php.html#190"><abbr title="Nol\Http\Parameters\Bag::string">string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#198"><abbr title="Nol\Http\Controller\Controller::flash">flash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#217"><abbr title="Nol\Http\Controller\Controller::conf">conf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#234"><abbr title="Nol\Http\Controller\Controller::hash">hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#252"><abbr title="Nol\Http\Controller\Controller::valid">valid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#267"><abbr title="Nol\Http\Controller\Controller::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#284"><abbr title="Nol\Http\Controller\Controller::app">app</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Session.php.html#121"><abbr title="Nol\Session\Session::all">all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#53"><abbr title="Nol\Testing\Unit::notDef">notDef</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#179"><abbr title="Nol\Html\Form\Generator\FormGenerator::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#748"><abbr title="Nol\Testing\Unit::hasStatic">hasStatic</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#572"><abbr title="Nol\Testing\Unit::has">has</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#623"><abbr title="Nol\Testing\Unit::only">only</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#646"><abbr title="Nol\Testing\Unit::notOnly">notOnly</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#690"><abbr title="Nol\Testing\Unit::not">not</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#712"><abbr title="Nol\Testing\Unit::hasAttribute">hasAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#730"><abbr title="Nol\Testing\Unit::hasNotAttribute">hasNotAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#766"><abbr title="Nol\Testing\Unit::hasNotStatic">hasNotStatic</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#536"><abbr title="Nol\Testing\Unit::notExist">notExist</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#784"><abbr title="Nol\Testing\Unit::sum">sum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#799"><abbr title="Nol\Testing\Unit::directoriesExist">directoriesExist</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#817"><abbr title="Nol\Testing\Unit::directoriesNotExist">directoriesNotExist</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#834"><abbr title="Nol\Testing\Unit::directoriesReadable">directoriesReadable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#852"><abbr title="Nol\Testing\Unit::directoriesNotReadable">directoriesNotReadable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#870"><abbr title="Nol\Testing\Unit::directoriesWritable">directoriesWritable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#554"><abbr title="Nol\Testing\Unit::notHas">notHas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#518"><abbr title="Nol\Testing\Unit::exist">exist</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#135"><abbr title="Nol\Testing\Unit::visit">visit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#306"><abbr title="Nol\Testing\Unit::callable">callable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#203"><abbr title="Nol\Testing\Unit::boolean">boolean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#220"><abbr title="Nol\Testing\Unit::notBoolean">notBoolean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#238"><abbr title="Nol\Testing\Unit::int">int</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#255"><abbr title="Nol\Testing\Unit::notInt">notInt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#272"><abbr title="Nol\Testing\Unit::num">num</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#289"><abbr title="Nol\Testing\Unit::notNum">notNum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#323"><abbr title="Nol\Testing\Unit::notCallable">notCallable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#464"><abbr title="Nol\Testing\Unit::notObject">notObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#340"><abbr title="Nol\Testing\Unit::float">float</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#357"><abbr title="Nol\Testing\Unit::notFloat">notFloat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#374"><abbr title="Nol\Testing\Unit::iterable">iterable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#392"><abbr title="Nol\Testing\Unit::notIterable">notIterable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#410"><abbr title="Nol\Testing\Unit::isArray">isArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#428"><abbr title="Nol\Testing\Unit::notArray">notArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#446"><abbr title="Nol\Testing\Unit::object">object</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#237"><abbr title="Nol\Html\Form\Generator\FormGenerator::select">select</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#39"><abbr title="Nol\Http\Controller\Controller::sql">sql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#167"><abbr title="Nol\Html\Form\Generator\FormGenerator::row">row</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#94"><abbr title="Nol\Database\Connection\Connect::exec">exec</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#1083"><abbr title="Nol\Collection\Collect::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#1097"><abbr title="Nol\Collection\Collect::uniq">uniq</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Configuration/Config.php.html#102"><abbr title="Nol\Configuration\Config::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Command.php.html#23"><abbr title="Nol\Console\Command::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Command.php.html#28"><abbr title="Nol\Console\Command::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Command.php.html#38"><abbr title="Nol\Console\Command::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#131"><abbr title="Nol\Database\Connection\Connect::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#969"><abbr title="Nol\Collection\Collect::sum">sum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#162"><abbr title="Nol\Database\Connection\Connect::driver">driver</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#175"><abbr title="Nol\Database\Connection\Connect::username">username</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#187"><abbr title="Nol\Database\Connection\Connect::password">password</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#199"><abbr title="Nol\Database\Connection\Connect::base">base</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#211"><abbr title="Nol\Database\Connection\Connect::hostname">hostname</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#228"><abbr title="Nol\Database\Connection\Connect::mysql">mysql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#245"><abbr title="Nol\Database\Connection\Connect::postgresql">postgresql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#983"><abbr title="Nol\Collection\Collect::shift">shift</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#891"><abbr title="Nol\Collection\Collect::joinKeys">joinKeys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#278"><abbr title="Nol\Database\Connection\Connect::pdo">pdo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#608"><abbr title="Nol\Collection\Collect::reduce">reduce</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#485"><abbr title="Nol\Collection\Collect::intersect">intersect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#500"><abbr title="Nol\Collection\Collect::replace">replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#512"><abbr title="Nol\Collection\Collect::arsort">arsort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#527"><abbr title="Nol\Collection\Collect::asort">asort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#555"><abbr title="Nol\Collection\Collect::unique">unique</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#581"><abbr title="Nol\Collection\Collect::product">product</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#594"><abbr title="Nol\Collection\Collect::map">map</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#624"><abbr title="Nol\Collection\Collect::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#742"><abbr title="Nol\Collection\Collect::refresh">refresh</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#640"><abbr title="Nol\Collection\Collect::display">display</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#654"><abbr title="Nol\Collection\Collect::sort">sort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#669"><abbr title="Nol\Collection\Collect::flip">flip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#682"><abbr title="Nol\Collection\Collect::shuffle">shuffle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#695"><abbr title="Nol\Collection\Collect::krsort">krsort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#708"><abbr title="Nol\Collection\Collect::ksort">ksort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#726"><abbr title="Nol\Collection\Collect::range">range</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#263"><abbr title="Nol\Database\Connection\Connect::sqlite">sqlite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#325"><abbr title="Nol\Database\Connection\Connect::env">env</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#888"><abbr title="Nol\Testing\Unit::directoriesNotWritable">directoriesNotWritable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#210"><abbr title="Nol\Database\Query\Sql::only">only</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#95"><abbr title="Nol\Database\Query\Sql::andColumn">andColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#111"><abbr title="Nol\Database\Query\Sql::not">not</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#124"><abbr title="Nol\Database\Query\Sql::sql">sql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#136"><abbr title="Nol\Database\Query\Sql::results">results</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#155"><abbr title="Nol\Database\Query\Sql::join">join</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#178"><abbr title="Nol\Database\Query\Sql::union">union</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#196"><abbr title="Nol\Database\Query\Sql::like">like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#224"><abbr title="Nol\Database\Query\Sql::between">between</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#62"><abbr title="Nol\Database\Query\Sql::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#244"><abbr title="Nol\Database\Query\Sql::take">take</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#259"><abbr title="Nol\Database\Query\Sql::by">by</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#271"><abbr title="Nol\Database\Query\Sql::sum">sum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#283"><abbr title="Nol\Database\Query\Sql::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#56"><abbr title="Nol\Database\Table\Table::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#72"><abbr title="Nol\Database\Table\Table::columns">columns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#116"><abbr title="Nol\Database\Table\Table::primary">primary</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#78"><abbr title="Nol\Database\Query\Sql::orColumn">orColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Query/Sql.php.html#47"><abbr title="Nol\Database\Query\Sql::where">where</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#346"><abbr title="Nol\Database\Connection\Connect::dev">dev</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#113"><abbr title="Nol\Database\Model\Model::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#367"><abbr title="Nol\Database\Connection\Connect::prod">prod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#388"><abbr title="Nol\Database\Connection\Connect::test">test</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#105"><abbr title="Nol\Database\Found\Search::builder">builder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#136"><abbr title="Nol\Database\Found\Search::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#175"><abbr title="Nol\Database\Found\Search::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#193"><abbr title="Nol\Database\Found\Search::global">global</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#150"><abbr title="Nol\Database\Model\Model::paginate">paginate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#193"><abbr title="Nol\Database\Model\Model::different">different</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#210"><abbr title="Nol\Database\Model\Model::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#223"><abbr title="Nol\Database\Model\Model::from">from</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#419"><abbr title="Nol\Http\Response\Response::sendHeaders">sendHeaders</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#70"><abbr title="Nol\Security\Validator\Validator::redirect">redirect</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#90"><abbr title="Nol\Security\Validator\Validator::analyse">analyse</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Configuration/Config.php.html#53"><abbr title="Nol\Configuration\Config::__construct">__construct</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="Http/Request/Request.php.html#108"><abbr title="Nol\Http\Request\Request::with">with</abbr></a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="Session/Session.php.html#39"><abbr title="Nol\Session\Session::__construct">__construct</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#77"><abbr title="Nol\Html\Form\Generator\FormGenerator::add">add</abbr></a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#354"><abbr title="Nol\Http\Response\Response::sendContent">sendContent</abbr></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Security/Validator/Validator.php.html#90"><abbr title="Nol\Security\Validator\Validator::analyse">analyse</abbr></a></td><td class="text-right">357</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#116"><abbr title="Nol\Database\Table\Table::primary">primary</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#77"><abbr title="Nol\Html\Form\Generator\FormGenerator::add">add</abbr></a></td><td class="text-right">75</td></tr>
+       <tr><td><a href="Database/Table/Table.php.html#72"><abbr title="Nol\Database\Table\Table::columns">columns</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#742"><abbr title="Nol\Collection\Collect::refresh">refresh</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#278"><abbr title="Nol\Database\Connection\Connect::pdo">pdo</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#113"><abbr title="Nol\Database\Model\Model::search">search</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Request/Request.php.html#108"><abbr title="Nol\Http\Request\Request::with">with</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#66"><abbr title="Nol\Http\Routing\Router::run">run</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Routing/Router.php.html#39"><abbr title="Nol\Http\Routing\Router::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#155"><abbr title="Nol\Http\Response\Response::from">from</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Request/Upload.php.html#72"><abbr title="Nol\Http\Request\Upload::apply">apply</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Parameters/UploadedFile.php.html#82"><abbr title="Nol\Http\Parameters\UploadedFile::move">move</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/Session.php.html#101"><abbr title="Nol\Session\Session::del">del</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Database/Model/Model.php.html#150"><abbr title="Nol\Database\Model\Model::paginate">paginate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#325"><abbr title="Nol\Database\Connection\Connect::env">env</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#131"><abbr title="Nol\Database\Connection\Connect::get">get</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#1097"><abbr title="Nol\Collection\Collect::uniq">uniq</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#136"><abbr title="Nol\Database\Found\Search::search">search</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#419"><abbr title="Nol\Http\Response\Response::sendHeaders">sendHeaders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#766"><abbr title="Nol\Testing\Unit::hasNotStatic">hasNotStatic</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#554"><abbr title="Nol\Testing\Unit::notHas">notHas</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#357"><abbr title="Nol\Testing\Unit::notFloat">notFloat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#374"><abbr title="Nol\Testing\Unit::iterable">iterable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#392"><abbr title="Nol\Testing\Unit::notIterable">notIterable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#410"><abbr title="Nol\Testing\Unit::isArray">isArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#428"><abbr title="Nol\Testing\Unit::notArray">notArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#446"><abbr title="Nol\Testing\Unit::object">object</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#464"><abbr title="Nol\Testing\Unit::notObject">notObject</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#518"><abbr title="Nol\Testing\Unit::exist">exist</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#536"><abbr title="Nol\Testing\Unit::notExist">notExist</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#572"><abbr title="Nol\Testing\Unit::has">has</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#870"><abbr title="Nol\Testing\Unit::directoriesWritable">directoriesWritable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#748"><abbr title="Nol\Testing\Unit::hasStatic">hasStatic</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#690"><abbr title="Nol\Testing\Unit::not">not</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#817"><abbr title="Nol\Testing\Unit::directoriesNotExist">directoriesNotExist</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#852"><abbr title="Nol\Testing\Unit::directoriesNotReadable">directoriesNotReadable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#712"><abbr title="Nol\Testing\Unit::hasAttribute">hasAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#730"><abbr title="Nol\Testing\Unit::hasNotAttribute">hasNotAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#834"><abbr title="Nol\Testing\Unit::directoriesReadable">directoriesReadable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#323"><abbr title="Nol\Testing\Unit::notCallable">notCallable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#799"><abbr title="Nol\Testing\Unit::directoriesExist">directoriesExist</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#340"><abbr title="Nol\Testing\Unit::float">float</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#66"><abbr title="Nol\Collection\Collect::combine">combine</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#306"><abbr title="Nol\Testing\Unit::callable">callable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#289"><abbr title="Nol\Testing\Unit::notNum">notNum</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#983"><abbr title="Nol\Collection\Collect::shift">shift</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Database/Connection/Connect.php.html#94"><abbr title="Nol\Database\Connection\Connect::exec">exec</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Database/Found/Search.php.html#193"><abbr title="Nol\Database\Found\Search::global">global</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Html/Form/Generator/FormGenerator.php.html#237"><abbr title="Nol\Html\Form\Generator\FormGenerator::select">select</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#56"><abbr title="Nol\Http\Controller\Controller::table">table</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controller/Controller.php.html#198"><abbr title="Nol\Http\Controller\Controller::flash">flash</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#175"><abbr title="Nol\Http\Response\Response::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Messages/Flash/Flash.php.html#59"><abbr title="Nol\Messages\Flash\Flash::message">message</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#888"><abbr title="Nol\Testing\Unit::directoriesNotWritable">directoriesNotWritable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/Session.php.html#57"><abbr title="Nol\Session\Session::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Collection/Collect.php.html#458"><abbr title="Nol\Collection\Collect::nextValue">nextValue</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/Session.php.html#133"><abbr title="Nol\Session\Session::clear">clear</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#53"><abbr title="Nol\Testing\Unit::notDef">notDef</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#203"><abbr title="Nol\Testing\Unit::boolean">boolean</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#220"><abbr title="Nol\Testing\Unit::notBoolean">notBoolean</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#238"><abbr title="Nol\Testing\Unit::int">int</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#255"><abbr title="Nol\Testing\Unit::notInt">notInt</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Testing/Unit.php.html#272"><abbr title="Nol\Testing\Unit::num">num</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security/Validator/Validator.php.html#70"><abbr title="Nol\Security\Validator\Validator::redirect">redirect</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Configuration/Config.php.html#53"><abbr title="Nol\Configuration\Config::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Session/Session.php.html#39"><abbr title="Nol\Session\Session::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Response/Response.php.html#354"><abbr title="Nol\Http\Response\Response::sendContent">sendContent</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 8.0.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.9</a> with <a href="https://xdebug.org/">Xdebug 2.9.6</a> and <a href="https://phpunit.de/">PHPUnit 9.0.0</a> at Sun Aug 16 9:45:37 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,1,2,1,0,2,1,2,3,1,2,11], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([144,0,0,1,0,4,2,1,6,0,1,186], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,5,"<a href=\"Cache\/CacheAdaptor.php.html#21\">Nol\\Cache\\CacheAdaptor<\/a>"],[78.37837837837837,17,"<a href=\"Cache\/ZenCache.php.html#10\">Nol\\Cache\\ZenCache<\/a>"],[74.0506329113924,118,"<a href=\"Collection\/Collect.php.html#39\">Nol\\Collection\\Collect<\/a>"],[43.75,5,"<a href=\"Configuration\/Config.php.html#41\">Nol\\Configuration\\Config<\/a>"],[85.71428571428571,5,"<a href=\"Configuration\/Personalization\/Nol.php.html#34\">Nol\\Configuration\\Personalization\\Nol<\/a>"],[0,3,"<a href=\"Console\/Command.php.html#15\">Nol\\Console\\Command<\/a>"],[100,8,"<a href=\"Container\/Ioc.php.html#53\">Nol\\Container\\Ioc<\/a>"],[7.5,25,"<a href=\"Database\/Connection\/Connect.php.html#46\">Nol\\Database\\Connection\\Connect<\/a>"],[0,9,"<a href=\"Database\/Found\/Search.php.html#42\">Nol\\Database\\Found\\Search<\/a>"],[0,12,"<a href=\"Database\/Model\/Model.php.html#40\">Nol\\Database\\Model\\Model<\/a>"],[0,16,"<a href=\"Database\/Query\/Sql.php.html#33\">Nol\\Database\\Query\\Sql<\/a>"],[0,19,"<a href=\"Database\/Table\/Table.php.html#40\">Nol\\Database\\Table\\Table<\/a>"],[100,3,"<a href=\"Environment\/Env.php.html#37\">Nol\\Environment\\Env<\/a>"],[100,0,"<a href=\"Exception\/Kedavra.php.html#34\">Nol\\Exception\\Kedavra<\/a>"],[91.66666666666666,15,"<a href=\"Html\/Form\/Form.php.html#23\">Nol\\Html\\Form\\Form<\/a>"],[54.166666666666664,33,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#24\">Nol\\Html\\Form\\Generator\\FormGenerator<\/a>"],[100,8,"<a href=\"Html\/Pagination\/Pagination.php.html#32\">Nol\\Html\\Pagination\\Pagination<\/a>"],[15,18,"<a href=\"Http\/Controller\/Controller.php.html#21\">Nol\\Http\\Controller\\Controller<\/a>"],[92.3076923076923,21,"<a href=\"Http\/Parameters\/Bag.php.html#40\">Nol\\Http\\Parameters\\Bag<\/a>"],[66.66666666666666,12,"<a href=\"Http\/Parameters\/UploadedFile.php.html#45\">Nol\\Http\\Parameters\\UploadedFile<\/a>"],[72.09302325581395,24,"<a href=\"Http\/Request\/Request.php.html#47\">Nol\\Http\\Request\\Request<\/a>"],[100,15,"<a href=\"Http\/Request\/ServerRequest.php.html#42\">Nol\\Http\\Request\\ServerRequest<\/a>"],[0,4,"<a href=\"Http\/Request\/Upload.php.html#40\">Nol\\Http\\Request\\Upload<\/a>"],[100,2,"<a href=\"Http\/Response\/JsonResponse.php.html#15\">Nol\\Http\\Response\\JsonResponse<\/a>"],[100,2,"<a href=\"Http\/Response\/RedirectResponse.php.html#41\">Nol\\Http\\Response\\RedirectResponse<\/a>"],[68.62745098039215,30,"<a href=\"Http\/Response\/Response.php.html#48\">Nol\\Http\\Response\\Response<\/a>"],[100,8,"<a href=\"Http\/Routing\/Route.php.html#22\">Nol\\Http\\Routing\\Route<\/a>"],[0,7,"<a href=\"Http\/Routing\/Router.php.html#25\">Nol\\Http\\Routing\\Router<\/a>"],[100,2,"<a href=\"Http\/Views\/View.php.html#29\">Nol\\Http\\Views\\View<\/a>"],[0,4,"<a href=\"Messages\/Flash\/Flash.php.html#18\">Nol\\Messages\\Flash\\Flash<\/a>"],[100,3,"<a href=\"Security\/Hashing\/Hash.php.html#20\">Nol\\Security\\Hashing\\Hash<\/a>"],[40,45,"<a href=\"Security\/Validator\/Validator.php.html#12\">Nol\\Security\\Validator\\Validator<\/a>"],[10.526315789473683,13,"<a href=\"Session\/Session.php.html#34\">Nol\\Session\\Session<\/a>"],[21.428571428571427,86,"<a href=\"Testing\/Unit.php.html#42\">Nol\\Testing\\Unit<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Cache\/CacheAdaptor.php.html#26\">Nol\\Cache\\CacheAdaptor::__construct<\/a>"],[100,1,"<a href=\"Cache\/CacheAdaptor.php.html#41\">Nol\\Cache\\CacheAdaptor::has<\/a>"],[100,1,"<a href=\"Cache\/CacheAdaptor.php.html#56\">Nol\\Cache\\CacheAdaptor::get<\/a>"],[100,1,"<a href=\"Cache\/CacheAdaptor.php.html#71\">Nol\\Cache\\CacheAdaptor::del<\/a>"],[100,1,"<a href=\"Cache\/CacheAdaptor.php.html#89\">Nol\\Cache\\CacheAdaptor::add<\/a>"],[75,2,"<a href=\"Cache\/ZenCache.php.html#21\">Nol\\Cache\\ZenCache::add<\/a>"],[75,2,"<a href=\"Cache\/ZenCache.php.html#39\">Nol\\Cache\\ZenCache::clean<\/a>"],[100,1,"<a href=\"Cache\/ZenCache.php.html#51\">Nol\\Cache\\ZenCache::clearAll<\/a>"],[78.57142857142857,12,"<a href=\"Cache\/ZenCache.php.html#63\">Nol\\Cache\\ZenCache::scan<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#49\">Nol\\Collection\\Collect::__construct<\/a>"],[0,2,"<a href=\"Collection\/Collect.php.html#66\">Nol\\Collection\\Collect::combine<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#79\">Nol\\Collection\\Collect::firstKey<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#90\">Nol\\Collection\\Collect::lastKey<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#104\">Nol\\Collection\\Collect::count<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#118\">Nol\\Collection\\Collect::position<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#148\">Nol\\Collection\\Collect::slice<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#163\">Nol\\Collection\\Collect::chunk<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#181\">Nol\\Collection\\Collect::all<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#195\">Nol\\Collection\\Collect::only<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#213\">Nol\\Collection\\Collect::diff<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#225\">Nol\\Collection\\Collect::last<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#237\">Nol\\Collection\\Collect::first<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#249\">Nol\\Collection\\Collect::reverse<\/a>"],[100,4,"<a href=\"Collection\/Collect.php.html#263\">Nol\\Collection\\Collect::beforeKey<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#284\">Nol\\Collection\\Collect::values<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#296\">Nol\\Collection\\Collect::keys<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#310\">Nol\\Collection\\Collect::before<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#328\">Nol\\Collection\\Collect::after<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#345\">Nol\\Collection\\Collect::get<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#357\">Nol\\Collection\\Collect::max<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#370\">Nol\\Collection\\Collect::min<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#384\">Nol\\Collection\\Collect::hasNot<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#396\">Nol\\Collection\\Collect::current<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#409\">Nol\\Collection\\Collect::key<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#422\">Nol\\Collection\\Collect::valid<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#434\">Nol\\Collection\\Collect::rewind<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#446\">Nol\\Collection\\Collect::next<\/a>"],[0,2,"<a href=\"Collection\/Collect.php.html#458\">Nol\\Collection\\Collect::nextValue<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#471\">Nol\\Collection\\Collect::empty<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#485\">Nol\\Collection\\Collect::intersect<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#500\">Nol\\Collection\\Collect::replace<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#512\">Nol\\Collection\\Collect::arsort<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#527\">Nol\\Collection\\Collect::asort<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#543\">Nol\\Collection\\Collect::forget<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#555\">Nol\\Collection\\Collect::unique<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#569\">Nol\\Collection\\Collect::take<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#581\">Nol\\Collection\\Collect::product<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#594\">Nol\\Collection\\Collect::map<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#608\">Nol\\Collection\\Collect::reduce<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#624\">Nol\\Collection\\Collect::filter<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#640\">Nol\\Collection\\Collect::display<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#654\">Nol\\Collection\\Collect::sort<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#669\">Nol\\Collection\\Collect::flip<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#682\">Nol\\Collection\\Collect::shuffle<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#695\">Nol\\Collection\\Collect::krsort<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#708\">Nol\\Collection\\Collect::ksort<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#726\">Nol\\Collection\\Collect::range<\/a>"],[0,5,"<a href=\"Collection\/Collect.php.html#742\">Nol\\Collection\\Collect::refresh<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#764\">Nol\\Collection\\Collect::push<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#781\">Nol\\Collection\\Collect::stack<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#798\">Nol\\Collection\\Collect::merge<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#813\">Nol\\Collection\\Collect::set<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#828\">Nol\\Collection\\Collect::put<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#843\">Nol\\Collection\\Collect::add<\/a>"],[100,3,"<a href=\"Collection\/Collect.php.html#859\">Nol\\Collection\\Collect::del<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#877\">Nol\\Collection\\Collect::join<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#891\">Nol\\Collection\\Collect::joinKeys<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#903\">Nol\\Collection\\Collect::ok<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#917\">Nol\\Collection\\Collect::exist<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#931\">Nol\\Collection\\Collect::has<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#945\">Nol\\Collection\\Collect::notExist<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#957\">Nol\\Collection\\Collect::clear<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#969\">Nol\\Collection\\Collect::sum<\/a>"],[0,2,"<a href=\"Collection\/Collect.php.html#983\">Nol\\Collection\\Collect::shift<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1002\">Nol\\Collection\\Collect::pop<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#1019\">Nol\\Collection\\Collect::checkout<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1031\">Nol\\Collection\\Collect::json<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1047\">Nol\\Collection\\Collect::each<\/a>"],[100,3,"<a href=\"Collection\/Collect.php.html#1065\">Nol\\Collection\\Collect::for<\/a>"],[0,1,"<a href=\"Collection\/Collect.php.html#1083\">Nol\\Collection\\Collect::init<\/a>"],[0,3,"<a href=\"Collection\/Collect.php.html#1097\">Nol\\Collection\\Collect::uniq<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#1117\">Nol\\Collection\\Collect::addObject<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#1133\">Nol\\Collection\\Collect::addCollect<\/a>"],[100,3,"<a href=\"Collection\/Collect.php.html#1148\">Nol\\Collection\\Collect::getCollect<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1166\">Nol\\Collection\\Collect::getObject<\/a>"],[100,1,"<a href=\"Collection\/Collect.php.html#1185\">Nol\\Collection\\Collect::addCallback<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1203\">Nol\\Collection\\Collect::getCallback<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1220\">Nol\\Collection\\Collect::getCallbackArguments<\/a>"],[100,2,"<a href=\"Collection\/Collect.php.html#1237\">Nol\\Collection\\Collect::call<\/a>"],[100,3,"<a href=\"Collection\/Collect.php.html#1258\">Nol\\Collection\\Collect::remove<\/a>"],[100,3,"<a href=\"Collection\/Collect.php.html#1277\">Nol\\Collection\\Collect::removeValue<\/a>"],[42.857142857142854,3,"<a href=\"Configuration\/Config.php.html#53\">Nol\\Configuration\\Config::__construct<\/a>"],[100,1,"<a href=\"Configuration\/Config.php.html#90\">Nol\\Configuration\\Config::path<\/a>"],[0,1,"<a href=\"Configuration\/Config.php.html#102\">Nol\\Configuration\\Config::get<\/a>"],[100,1,"<a href=\"Configuration\/Personalization\/Nol.php.html#42\">Nol\\Configuration\\Personalization\\Nol::__construct<\/a>"],[75,3,"<a href=\"Configuration\/Personalization\/Nol.php.html#55\">Nol\\Configuration\\Personalization\\Nol::get<\/a>"],[100,1,"<a href=\"Configuration\/Personalization\/Nol.php.html#72\">Nol\\Configuration\\Personalization\\Nol::file<\/a>"],[0,1,"<a href=\"Console\/Command.php.html#23\">Nol\\Console\\Command::__construct<\/a>"],[0,1,"<a href=\"Console\/Command.php.html#28\">Nol\\Console\\Command::add<\/a>"],[0,1,"<a href=\"Console\/Command.php.html#38\">Nol\\Console\\Command::run<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#71\">Nol\\Container\\Ioc::get<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#88\">Nol\\Container\\Ioc::set<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#108\">Nol\\Container\\Ioc::call<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#128\">Nol\\Container\\Ioc::make<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#145\">Nol\\Container\\Ioc::has<\/a>"],[100,1,"<a href=\"Container\/Ioc.php.html#158\">Nol\\Container\\Ioc::ioc<\/a>"],[100,2,"<a href=\"Container\/Ioc.php.html#172\">Nol\\Container\\Ioc::container<\/a>"],[100,1,"<a href=\"Database\/Connection\/Connect.php.html#62\">Nol\\Database\\Connection\\Connect::__construct<\/a>"],[0,2,"<a href=\"Database\/Connection\/Connect.php.html#94\">Nol\\Database\\Connection\\Connect::exec<\/a>"],[0,3,"<a href=\"Database\/Connection\/Connect.php.html#131\">Nol\\Database\\Connection\\Connect::get<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#162\">Nol\\Database\\Connection\\Connect::driver<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#175\">Nol\\Database\\Connection\\Connect::username<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#187\">Nol\\Database\\Connection\\Connect::password<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#199\">Nol\\Database\\Connection\\Connect::base<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#211\">Nol\\Database\\Connection\\Connect::hostname<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#228\">Nol\\Database\\Connection\\Connect::mysql<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#245\">Nol\\Database\\Connection\\Connect::postgresql<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#263\">Nol\\Database\\Connection\\Connect::sqlite<\/a>"],[0,5,"<a href=\"Database\/Connection\/Connect.php.html#278\">Nol\\Database\\Connection\\Connect::pdo<\/a>"],[0,3,"<a href=\"Database\/Connection\/Connect.php.html#325\">Nol\\Database\\Connection\\Connect::env<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#346\">Nol\\Database\\Connection\\Connect::dev<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#367\">Nol\\Database\\Connection\\Connect::prod<\/a>"],[0,1,"<a href=\"Database\/Connection\/Connect.php.html#388\">Nol\\Database\\Connection\\Connect::test<\/a>"],[100,1,"<a href=\"Database\/Found\/Search.php.html#96\">Nol\\Database\\Found\\Search::form<\/a>"],[0,1,"<a href=\"Database\/Found\/Search.php.html#105\">Nol\\Database\\Found\\Search::builder<\/a>"],[100,1,"<a href=\"Database\/Found\/Search.php.html#120\">Nol\\Database\\Found\\Search::each<\/a>"],[0,3,"<a href=\"Database\/Found\/Search.php.html#136\">Nol\\Database\\Found\\Search::search<\/a>"],[0,1,"<a href=\"Database\/Found\/Search.php.html#175\">Nol\\Database\\Found\\Search::from<\/a>"],[0,2,"<a href=\"Database\/Found\/Search.php.html#193\">Nol\\Database\\Found\\Search::global<\/a>"],[100,1,"<a href=\"Database\/Model\/Model.php.html#97\">Nol\\Database\\Model\\Model::each<\/a>"],[0,5,"<a href=\"Database\/Model\/Model.php.html#113\">Nol\\Database\\Model\\Model::search<\/a>"],[0,3,"<a href=\"Database\/Model\/Model.php.html#150\">Nol\\Database\\Model\\Model::paginate<\/a>"],[0,1,"<a href=\"Database\/Model\/Model.php.html#193\">Nol\\Database\\Model\\Model::different<\/a>"],[0,1,"<a href=\"Database\/Model\/Model.php.html#210\">Nol\\Database\\Model\\Model::find<\/a>"],[0,1,"<a href=\"Database\/Model\/Model.php.html#223\">Nol\\Database\\Model\\Model::from<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#47\">Nol\\Database\\Query\\Sql::where<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#62\">Nol\\Database\\Query\\Sql::from<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#78\">Nol\\Database\\Query\\Sql::orColumn<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#95\">Nol\\Database\\Query\\Sql::andColumn<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#111\">Nol\\Database\\Query\\Sql::not<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#124\">Nol\\Database\\Query\\Sql::sql<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#136\">Nol\\Database\\Query\\Sql::results<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#155\">Nol\\Database\\Query\\Sql::join<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#178\">Nol\\Database\\Query\\Sql::union<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#196\">Nol\\Database\\Query\\Sql::like<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#210\">Nol\\Database\\Query\\Sql::only<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#224\">Nol\\Database\\Query\\Sql::between<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#244\">Nol\\Database\\Query\\Sql::take<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#259\">Nol\\Database\\Query\\Sql::by<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#271\">Nol\\Database\\Query\\Sql::sum<\/a>"],[0,1,"<a href=\"Database\/Query\/Sql.php.html#283\">Nol\\Database\\Query\\Sql::delete<\/a>"],[0,1,"<a href=\"Database\/Table\/Table.php.html#56\">Nol\\Database\\Table\\Table::from<\/a>"],[0,8,"<a href=\"Database\/Table\/Table.php.html#72\">Nol\\Database\\Table\\Table::columns<\/a>"],[0,10,"<a href=\"Database\/Table\/Table.php.html#116\">Nol\\Database\\Table\\Table::primary<\/a>"],[100,1,"<a href=\"Environment\/Env.php.html#41\">Nol\\Environment\\Env::__construct<\/a>"],[100,2,"<a href=\"Environment\/Env.php.html#70\">Nol\\Environment\\Env::get<\/a>"],[100,1,"<a href=\"Html\/Form\/Form.php.html#53\">Nol\\Html\\Form\\Form::success<\/a>"],[90,9,"<a href=\"Html\/Form\/Form.php.html#66\">Nol\\Html\\Form\\Form::display<\/a>"],[100,1,"<a href=\"Html\/Form\/Form.php.html#123\">Nol\\Html\\Form\\Form::builder<\/a>"],[100,4,"<a href=\"Html\/Form\/Form.php.html#140\">Nol\\Html\\Form\\Form::apply<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#31\">Nol\\Html\\Form\\Generator\\FormGenerator::__construct<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#50\">Nol\\Html\\Form\\Generator\\FormGenerator::open<\/a>"],[53.84615384615385,23,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#77\">Nol\\Html\\Form\\Generator\\FormGenerator::add<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#153\">Nol\\Html\\Form\\Generator\\FormGenerator::has<\/a>"],[0,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#167\">Nol\\Html\\Form\\Generator\\FormGenerator::row<\/a>"],[0,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#179\">Nol\\Html\\Form\\Generator\\FormGenerator::end<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#196\">Nol\\Html\\Form\\Generator\\FormGenerator::close<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#217\">Nol\\Html\\Form\\Generator\\FormGenerator::append<\/a>"],[0,2,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#237\">Nol\\Html\\Form\\Generator\\FormGenerator::select<\/a>"],[100,1,"<a href=\"Html\/Form\/Generator\/FormGenerator.php.html#264\">Nol\\Html\\Form\\Generator\\FormGenerator::generateInputOptions<\/a>"],[100,2,"<a href=\"Html\/Pagination\/Pagination.php.html#65\">Nol\\Html\\Pagination\\Pagination::__construct<\/a>"],[100,6,"<a href=\"Html\/Pagination\/Pagination.php.html#86\">Nol\\Html\\Pagination\\Pagination::render<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#39\">Nol\\Http\\Controller\\Controller::sql<\/a>"],[0,2,"<a href=\"Http\/Controller\/Controller.php.html#56\">Nol\\Http\\Controller\\Controller::table<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#73\">Nol\\Http\\Controller\\Controller::form<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#91\">Nol\\Http\\Controller\\Controller::apply<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#106\">Nol\\Http\\Controller\\Controller::response<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#121\">Nol\\Http\\Controller\\Controller::env<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#136\">Nol\\Http\\Controller\\Controller::session<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#150\">Nol\\Http\\Controller\\Controller::collect<\/a>"],[75,2,"<a href=\"Http\/Controller\/Controller.php.html#170\">Nol\\Http\\Controller\\Controller::view<\/a>"],[0,2,"<a href=\"Http\/Controller\/Controller.php.html#198\">Nol\\Http\\Controller\\Controller::flash<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#217\">Nol\\Http\\Controller\\Controller::conf<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#234\">Nol\\Http\\Controller\\Controller::hash<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#252\">Nol\\Http\\Controller\\Controller::valid<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#267\">Nol\\Http\\Controller\\Controller::connect<\/a>"],[0,1,"<a href=\"Http\/Controller\/Controller.php.html#284\">Nol\\Http\\Controller\\Controller::app<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#49\">Nol\\Http\\Parameters\\Bag::__construct<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#61\">Nol\\Http\\Parameters\\Bag::keys<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#73\">Nol\\Http\\Parameters\\Bag::values<\/a>"],[100,2,"<a href=\"Http\/Parameters\/Bag.php.html#91\">Nol\\Http\\Parameters\\Bag::get<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#106\">Nol\\Http\\Parameters\\Bag::set<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#122\">Nol\\Http\\Parameters\\Bag::add<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#140\">Nol\\Http\\Parameters\\Bag::has<\/a>"],[100,2,"<a href=\"Http\/Parameters\/Bag.php.html#156\">Nol\\Http\\Parameters\\Bag::destroy<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#175\">Nol\\Http\\Parameters\\Bag::int<\/a>"],[0,1,"<a href=\"Http\/Parameters\/Bag.php.html#190\">Nol\\Http\\Parameters\\Bag::string<\/a>"],[0,1,"<a href=\"Http\/Parameters\/Bag.php.html#205\">Nol\\Http\\Parameters\\Bag::double<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#220\">Nol\\Http\\Parameters\\Bag::bool<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#235\">Nol\\Http\\Parameters\\Bag::digits<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#253\">Nol\\Http\\Parameters\\Bag::filter<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#270\">Nol\\Http\\Parameters\\Bag::alpha<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#285\">Nol\\Http\\Parameters\\Bag::alnum<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#297\">Nol\\Http\\Parameters\\Bag::all<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#309\">Nol\\Http\\Parameters\\Bag::getIterator<\/a>"],[100,1,"<a href=\"Http\/Parameters\/Bag.php.html#320\">Nol\\Http\\Parameters\\Bag::count<\/a>"],[100,2,"<a href=\"Http\/Parameters\/UploadedFile.php.html#55\">Nol\\Http\\Parameters\\UploadedFile::__construct<\/a>"],[0,3,"<a href=\"Http\/Parameters\/UploadedFile.php.html#82\">Nol\\Http\\Parameters\\UploadedFile::move<\/a>"],[100,3,"<a href=\"Http\/Parameters\/UploadedFile.php.html#110\">Nol\\Http\\Parameters\\UploadedFile::ok<\/a>"],[100,1,"<a href=\"Http\/Parameters\/UploadedFile.php.html#127\">Nol\\Http\\Parameters\\UploadedFile::errors<\/a>"],[100,1,"<a href=\"Http\/Parameters\/UploadedFile.php.html#139\">Nol\\Http\\Parameters\\UploadedFile::all<\/a>"],[100,1,"<a href=\"Http\/Parameters\/UploadedFile.php.html#150\">Nol\\Http\\Parameters\\UploadedFile::types<\/a>"],[100,1,"<a href=\"Http\/Parameters\/UploadedFile.php.html#161\">Nol\\Http\\Parameters\\UploadedFile::sizes<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#60\">Nol\\Http\\Request\\Request::__construct<\/a>"],[0,1,"<a href=\"Http\/Request\/Request.php.html#85\">Nol\\Http\\Request\\Request::set<\/a>"],[47.61904761904761,7,"<a href=\"Http\/Request\/Request.php.html#108\">Nol\\Http\\Request\\Request::with<\/a>"],[100,2,"<a href=\"Http\/Request\/Request.php.html#147\">Nol\\Http\\Request\\Request::secure<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#162\">Nol\\Http\\Request\\Request::make<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#174\">Nol\\Http\\Request\\Request::query<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#187\">Nol\\Http\\Request\\Request::args<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#199\">Nol\\Http\\Request\\Request::request<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#211\">Nol\\Http\\Request\\Request::server<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#223\">Nol\\Http\\Request\\Request::files<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#235\">Nol\\Http\\Request\\Request::cookie<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#252\">Nol\\Http\\Request\\Request::initialize<\/a>"],[100,2,"<a href=\"Http\/Request\/Request.php.html#275\">Nol\\Http\\Request\\Request::ip<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#288\">Nol\\Http\\Request\\Request::local<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#300\">Nol\\Http\\Request\\Request::hasToken<\/a>"],[100,1,"<a href=\"Http\/Request\/Request.php.html#312\">Nol\\Http\\Request\\Request::submitted<\/a>"],[100,2,"<a href=\"Http\/Request\/ServerRequest.php.html#55\">Nol\\Http\\Request\\ServerRequest::__construct<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#73\">Nol\\Http\\Request\\ServerRequest::match<\/a>"],[100,2,"<a href=\"Http\/Request\/ServerRequest.php.html#86\">Nol\\Http\\Request\\ServerRequest::generate<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#101\">Nol\\Http\\Request\\ServerRequest::method<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#113\">Nol\\Http\\Request\\ServerRequest::url<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#125\">Nol\\Http\\Request\\ServerRequest::post<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#137\">Nol\\Http\\Request\\ServerRequest::submitted<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#149\">Nol\\Http\\Request\\ServerRequest::local<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#162\">Nol\\Http\\Request\\ServerRequest::get<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#174\">Nol\\Http\\Request\\ServerRequest::cookie<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#186\">Nol\\Http\\Request\\ServerRequest::server<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#198\">Nol\\Http\\Request\\ServerRequest::files<\/a>"],[100,1,"<a href=\"Http\/Request\/ServerRequest.php.html#211\">Nol\\Http\\Request\\ServerRequest::hasToken<\/a>"],[100,1,"<a href=\"Http\/Request\/Upload.php.html#61\">Nol\\Http\\Request\\Upload::do<\/a>"],[0,3,"<a href=\"Http\/Request\/Upload.php.html#72\">Nol\\Http\\Request\\Upload::apply<\/a>"],[100,1,"<a href=\"Http\/Response\/JsonResponse.php.html#22\">Nol\\Http\\Response\\JsonResponse::__construct<\/a>"],[100,1,"<a href=\"Http\/Response\/JsonResponse.php.html#34\">Nol\\Http\\Response\\JsonResponse::send<\/a>"],[100,1,"<a href=\"Http\/Response\/RedirectResponse.php.html#54\">Nol\\Http\\Response\\RedirectResponse::__construct<\/a>"],[100,1,"<a href=\"Http\/Response\/RedirectResponse.php.html#66\">Nol\\Http\\Response\\RedirectResponse::send<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#51\">Nol\\Http\\Response\\Response::__construct<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#137\">Nol\\Http\\Response\\Response::set<\/a>"],[0,3,"<a href=\"Http\/Response\/Response.php.html#155\">Nol\\Http\\Response\\Response::from<\/a>"],[0,2,"<a href=\"Http\/Response\/Response.php.html#175\">Nol\\Http\\Response\\Response::get<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#194\">Nol\\Http\\Response\\Response::calc<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#208\">Nol\\Http\\Response\\Response::see<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#224\">Nol\\Http\\Response\\Response::to<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#238\">Nol\\Http\\Response\\Response::send<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#250\">Nol\\Http\\Response\\Response::content<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#262\">Nol\\Http\\Response\\Response::status<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#276\">Nol\\Http\\Response\\Response::code<\/a>"],[100,2,"<a href=\"Http\/Response\/Response.php.html#290\">Nol\\Http\\Response\\Response::ok<\/a>"],[100,2,"<a href=\"Http\/Response\/Response.php.html#302\">Nol\\Http\\Response\\Response::redirect<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#314\">Nol\\Http\\Response\\Response::forbidden<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#326\">Nol\\Http\\Response\\Response::error<\/a>"],[100,2,"<a href=\"Http\/Response\/Response.php.html#340\">Nol\\Http\\Response\\Response::setUrl<\/a>"],[66.66666666666666,2,"<a href=\"Http\/Response\/Response.php.html#354\">Nol\\Http\\Response\\Response::sendContent<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#371\">Nol\\Http\\Response\\Response::setHeaders<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#388\">Nol\\Http\\Response\\Response::setStatus<\/a>"],[100,1,"<a href=\"Http\/Response\/Response.php.html#405\">Nol\\Http\\Response\\Response::setContent<\/a>"],[28.57142857142857,3,"<a href=\"Http\/Response\/Response.php.html#419\">Nol\\Http\\Response\\Response::sendHeaders<\/a>"],[100,3,"<a href=\"Http\/Routing\/Route.php.html#32\">Nol\\Http\\Routing\\Route::__construct<\/a>"],[100,1,"<a href=\"Http\/Routing\/Route.php.html#60\">Nol\\Http\\Routing\\Route::action<\/a>"],[100,1,"<a href=\"Http\/Routing\/Route.php.html#72\">Nol\\Http\\Routing\\Route::controller<\/a>"],[100,2,"<a href=\"Http\/Routing\/Route.php.html#86\">Nol\\Http\\Routing\\Route::args<\/a>"],[100,1,"<a href=\"Http\/Routing\/Route.php.html#102\">Nol\\Http\\Routing\\Route::exec<\/a>"],[0,3,"<a href=\"Http\/Routing\/Router.php.html#39\">Nol\\Http\\Routing\\Router::__construct<\/a>"],[0,3,"<a href=\"Http\/Routing\/Router.php.html#66\">Nol\\Http\\Routing\\Router::run<\/a>"],[0,1,"<a href=\"Http\/Routing\/Router.php.html#92\">Nol\\Http\\Routing\\Router::match<\/a>"],[100,1,"<a href=\"Http\/Views\/View.php.html#47\">Nol\\Http\\Views\\View::__construct<\/a>"],[100,1,"<a href=\"Http\/Views\/View.php.html#96\">Nol\\Http\\Views\\View::send<\/a>"],[0,1,"<a href=\"Messages\/Flash\/Flash.php.html#29\">Nol\\Messages\\Flash\\Flash::set<\/a>"],[0,1,"<a href=\"Messages\/Flash\/Flash.php.html#44\">Nol\\Messages\\Flash\\Flash::has<\/a>"],[0,2,"<a href=\"Messages\/Flash\/Flash.php.html#59\">Nol\\Messages\\Flash\\Flash::message<\/a>"],[100,1,"<a href=\"Security\/Hashing\/Hash.php.html#32\">Nol\\Security\\Hashing\\Hash::__construct<\/a>"],[100,1,"<a href=\"Security\/Hashing\/Hash.php.html#52\">Nol\\Security\\Hashing\\Hash::valid<\/a>"],[100,1,"<a href=\"Security\/Hashing\/Hash.php.html#64\">Nol\\Security\\Hashing\\Hash::generate<\/a>"],[100,1,"<a href=\"Security\/Validator\/Validator.php.html#37\">Nol\\Security\\Validator\\Validator::check<\/a>"],[0,1,"<a href=\"Security\/Validator\/Validator.php.html#48\">Nol\\Security\\Validator\\Validator::alert<\/a>"],[40,3,"<a href=\"Security\/Validator\/Validator.php.html#70\">Nol\\Security\\Validator\\Validator::redirect<\/a>"],[40.6015037593985,39,"<a href=\"Security\/Validator\/Validator.php.html#90\">Nol\\Security\\Validator\\Validator::analyse<\/a>"],[100,1,"<a href=\"Security\/Validator\/Validator.php.html#315\">Nol\\Security\\Validator\\Validator::addError<\/a>"],[50,3,"<a href=\"Session\/Session.php.html#39\">Nol\\Session\\Session::__construct<\/a>"],[0,2,"<a href=\"Session\/Session.php.html#57\">Nol\\Session\\Session::get<\/a>"],[0,1,"<a href=\"Session\/Session.php.html#72\">Nol\\Session\\Session::set<\/a>"],[0,1,"<a href=\"Session\/Session.php.html#87\">Nol\\Session\\Session::has<\/a>"],[0,3,"<a href=\"Session\/Session.php.html#101\">Nol\\Session\\Session::del<\/a>"],[0,1,"<a href=\"Session\/Session.php.html#121\">Nol\\Session\\Session::all<\/a>"],[0,2,"<a href=\"Session\/Session.php.html#133\">Nol\\Session\\Session::clear<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#53\">Nol\\Testing\\Unit::notDef<\/a>"],[100,1,"<a href=\"Testing\/Unit.php.html#67\">Nol\\Testing\\Unit::response<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#79\">Nol\\Testing\\Unit::contains<\/a>"],[100,1,"<a href=\"Testing\/Unit.php.html#97\">Nol\\Testing\\Unit::json<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#111\">Nol\\Testing\\Unit::success<\/a>"],[0,1,"<a href=\"Testing\/Unit.php.html#135\">Nol\\Testing\\Unit::visit<\/a>"],[100,1,"<a href=\"Testing\/Unit.php.html#154\">Nol\\Testing\\Unit::route<\/a>"],[75,1,"<a href=\"Testing\/Unit.php.html#169\">Nol\\Testing\\Unit::throw<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#186\">Nol\\Testing\\Unit::failure<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#203\">Nol\\Testing\\Unit::boolean<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#220\">Nol\\Testing\\Unit::notBoolean<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#238\">Nol\\Testing\\Unit::int<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#255\">Nol\\Testing\\Unit::notInt<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#272\">Nol\\Testing\\Unit::num<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#289\">Nol\\Testing\\Unit::notNum<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#306\">Nol\\Testing\\Unit::callable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#323\">Nol\\Testing\\Unit::notCallable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#340\">Nol\\Testing\\Unit::float<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#357\">Nol\\Testing\\Unit::notFloat<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#374\">Nol\\Testing\\Unit::iterable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#392\">Nol\\Testing\\Unit::notIterable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#410\">Nol\\Testing\\Unit::isArray<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#428\">Nol\\Testing\\Unit::notArray<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#446\">Nol\\Testing\\Unit::object<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#464\">Nol\\Testing\\Unit::notObject<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#482\">Nol\\Testing\\Unit::empty<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#500\">Nol\\Testing\\Unit::def<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#518\">Nol\\Testing\\Unit::exist<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#536\">Nol\\Testing\\Unit::notExist<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#554\">Nol\\Testing\\Unit::notHas<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#572\">Nol\\Testing\\Unit::has<\/a>"],[100,1,"<a href=\"Testing\/Unit.php.html#590\">Nol\\Testing\\Unit::identical<\/a>"],[100,1,"<a href=\"Testing\/Unit.php.html#606\">Nol\\Testing\\Unit::different<\/a>"],[0,1,"<a href=\"Testing\/Unit.php.html#623\">Nol\\Testing\\Unit::only<\/a>"],[0,1,"<a href=\"Testing\/Unit.php.html#646\">Nol\\Testing\\Unit::notOnly<\/a>"],[100,2,"<a href=\"Testing\/Unit.php.html#666\">Nol\\Testing\\Unit::is<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#690\">Nol\\Testing\\Unit::not<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#712\">Nol\\Testing\\Unit::hasAttribute<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#730\">Nol\\Testing\\Unit::hasNotAttribute<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#748\">Nol\\Testing\\Unit::hasStatic<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#766\">Nol\\Testing\\Unit::hasNotStatic<\/a>"],[0,1,"<a href=\"Testing\/Unit.php.html#784\">Nol\\Testing\\Unit::sum<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#799\">Nol\\Testing\\Unit::directoriesExist<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#817\">Nol\\Testing\\Unit::directoriesNotExist<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#834\">Nol\\Testing\\Unit::directoriesReadable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#852\">Nol\\Testing\\Unit::directoriesNotReadable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#870\">Nol\\Testing\\Unit::directoriesWritable<\/a>"],[0,2,"<a href=\"Testing\/Unit.php.html#888\">Nol\\Testing\\Unit::directoriesNotWritable<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
